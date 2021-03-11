@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my login form</title>
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.myform{
+			width: 300px;
+			height: 400px;
+			background-color: gray;
+			margin-left: 500px;
+			margin-top: 200px;
+		}
+		h1{
+			text-align: center;
+		}
+		.detail{
+			margin: 20px;
+			height: 40px;
+			width: 200px;
+			padding: 7px;
+			font-size: 20px;
+			text-align: center;
+			border-radius: 20px;
+			margin-left: 45px;
+			border: 0px;
+			transition: 0.25s;
+			border: 2px solid blue;
+			display: block;
+
+		}
+		.btn{
+			margin: 20px;
+			height: 40px;
+			width: 150px;
+			padding: 7px;
+			font-size: 20px;
+			text-align: center;
+			border-radius: 20px;
+			margin-left: 80px;
+		}
+		body{
+			background-image: url(me.jpg);
+		}
+	</style>
+	<script>
+		function valid()
+		{
+			var name="leen";
+			var password="0000";
+			var inputname=document.getElementById("us").value;
+			var inputpassword=document.getElementById("pa").value;
+			if (name===inputname&&password===inputpassword) {
+				location.href="form.html";
+			}
+			else{
+				alert("login failed");
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="myform">
+		<form name="loginform" onsubmit="return false">
+			<h1>LOGIN FORM</h1>
+			<input type="text" class="detail" placeholder="username" id="us" required>
+			<br>
+			<input type="password" class="detail" placeholder="password" id="pa" required>
+			<br>
+			<input type="submit" class="btn" value="login" onclick="valid();">
+		</form>
+		
+	</div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+	<style>
+		.main{
+			width: 40%;
+			margin: 2cm auto;
+			border: 2px solid black;
+			padding: 1cm;
+			background-color: lightblue;
+
+		}
+		.main input[type="submit"]
+		{
+			width: 95%;
+			border: 1px solid black;
+			padding: 10PX;
+			margin-top: 20px;
+
+			
+		}
+		.main input[type="password"]
+		{
+			width: 95%;
+			border: 1px solid black;
+			padding: 10PX;
+			margin-top: 20px;
+
+			
+		}
+		.main input[type="text"],.main input[type="email"]
+		{
+			width: 45%;
+			border: 1px solid black;
+			padding: 10PX;
+			margin-top: 20px;
+			
+		}
+		.date
+		{
+			margin-top: 20px;
+			padding: 10px;
+
+		}
+		.file
+		{
+			margin-top: 20px;
+		}
+		.box{
+			text-align: center;
+			background-color: skyblue;
+			height: 100px;
+		    background-image: url(us.jpg);
+		    background-position: center;    
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<h1>Registration Form</h1>
+		<h2>Register from the form below</h2>
+	</div>
+	<div class="main">
+		<form method="post" action="welcome.php">
+			<h2>Student Registration</h2>
+			<input type="text" name="first name" placeholder="first name"><br>
+			<input type="text" name="last name" placeholder="last name"><br>
+			<input type="email" name="email" placeholder="email"><br>
+			<div class="date">
+			<input type="date" name="date" placeholder=""><br>
+		    </div>
+			<input type="text" name="mobile" placeholder="mobile"><br>
+			<input type="text" name="city" placeholder="city"><br>
+			<div class="file">
+			upload photo:<input type="file">
+		</div>
+			<hr>
+			Gender<br>
+			<input type="radio" name="Gender" value="male">male<br>
+			<input type="radio" name="Gender" value="female">female<br>
+			<hr>
+			Hobbies<br>
+			<input type="checkbox" name="hobby[]" value="acting">acting<br>
+
+			<input type="checkbox" name="hobby[]" value="bike riding">bike riding<br>
+			<input type="checkbox" name="hobby[]" value="swimming">swimming<br>
+			<input type="checkbox" name="hobby[]" value="hiking">hiking<br>
+			<input type="checkbox" name="hobby[]" value="travelling">travelling<br>
+			<input type="checkbox" name="hobby[]" value="playing guitar">playing guitar<br>
+			<hr>
+			<input type="password" name="password" placeholder="password"><br>
+
+			<input type="submit" name="submit" value="Register">
+		</form>
+	</div>
+
+</body>
+</html>

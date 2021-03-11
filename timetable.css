@@ -1,0 +1,23 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+h1{
+	background: linear-gradient(to right, blue,orange);
+	height: 70px;
+	text-align: center;
+}
+h3{
+	text-align: center;
+	background: linear-gradient(to right,pink,purple)
+}
+table{
+	text-align: center;
+	margin-left: 400px;
+	background-color: white;
+	font-size: 25px;
+}
+body{
+	background-image: url(edu.jpg);
+	background: repeating-linear-gradient(to right,blue,purple)
+}
